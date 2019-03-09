@@ -1,17 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     max-width: 1388px;
     margin: 0 auto;
     font-family: 'Source Code Pro', monospace;
+    background-color:rgb(228, 226, 226);
+
 }
 
 .navigation {
     position: fixed;
     top: 0;
-    width: 80%;
+    width: 100%;
     height: 60px;
-    margin: 0 auto;
+    
     left: 0;
     right: 0;
+    background-color: white;
+}
+.navigation-wrapper {
+    margin: 0 auto;
+    width: 80%;
 }
 
 .nav-list {
@@ -54,11 +65,85 @@ body {
 
 .header {
     margin-top: 60px;
-    height: 100vh;
+    height: 80vh;
     background-image: url("imeg/back.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.about {
+    width: 100%;
+    height: 400px;
+    margin: 120px 0 120px 0;    
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.about-info {
+    float: left;
+    width: 75%; 
+    height: 342px;
+    background-color: white;
+    padding: 100px;
+}
+.about-info h1{
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: 300;
+}
+.about-info p{
+    color: #888;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 300;
+    
+}
+.about-image {
+    float: right;
+    width: 25%;
+    position: relative;
+    
+        
+}
+
+.about-image img {
+    width: 240px;
+    border-radius: 50%;
+    height: 240px;
+    position: absolute;
+    left: -80px;
+    top: 50px;
+    border: 8px solid white;
+    padding: 12px;
+}
+.about-image::after{
+    content: "";
+    width: 270px;
+    height: 270px;
+    background-color: white;
+    border-radius: 50%;
+}
+.team-header{
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding: 100px 150px 80px 150px;
+
+}
+.team-header h1{
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: 300;
+}
+.team-header p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+
 
  
